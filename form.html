@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>form</title>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="ajax.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <div id="container" class="row">
+    <form id="register-form">
+      <div class="col-md-6 col-sm-12 form-group">
+        <label for="firstName">First name</label>
+        <input name="firstName" type="text" class="form-control" id="firstName" placeholder="first name" required>
+      </div>
+      <div class="col-md-6 col-sm-12 form-group">
+        <label for="lastName">Last name</label>
+        <input name="lastName" type="text" class="form-control" id="lastName" placeholder="last name"required>
+      </div>
+      <div class="col-md-6 col-sm-12 form-group">
+        <label for="userName">User name</label>
+        <input name="userName" type="text" class="form-control" id="userName" placehoder="User name" required>
+      </div>
+      <div class="col-md-6 col-sm-12 form-group">
+        <label for="dateOfBirth">Date of birth</label>
+        <input name="dateOfBirth" type="date" class="form-control" id="dateOfBirth" required>
+      </div>
+      <div class="col-md-6 col-sm-12 form-group">
+        <label for="InputEmail">Email address</label>
+        <input name="Email" type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+      </div>
+      <div class="col-md-6 col-sm-12 form-group">
+        <label for="streeAddress">Stree address</label>
+        <input name="address" type="text" class="form-control" id="streeAddress">
+      </div>
+      <div class="col-md-6 col-sm-12 form-group">
+        <label for="phoneNumber">Phone number</label>
+        <input name="phoneNumber" type="tel" class="form-control" id="phoneNumber">
+      </div>
+      <div class="col-md-6 col-sm-12 form-group">
+        <label for="password1">Password</label>
+        <input name="password" type="password" class="form-control" id="password1" placeholder="Password" required>
+      </div>
+      <div class="col-md-6 col-sm-12 form-group">
+        <label for="password2">Confirm password</label>
+        <input type="password" class="form-control" id="password2" placeholder="Password" required>
+      </div>
+      <div class="col-md-12 form-group">
+        <button type="submit" class="btn btn-default" id="submitButton">Submit</button>
+      </div>
+    </form>
+    <div id="status"></div>
+  </div>
+</body>
+</html>
