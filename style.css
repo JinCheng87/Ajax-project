@@ -1,0 +1,9 @@
+#container {
+  width: 60%;
+  border: grey 2px solid;
+  margin: auto;
+}
+#submitButton  {
+  display: block;
+  margin: 20px auto;
+}
