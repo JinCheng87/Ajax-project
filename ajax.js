@@ -1,15 +1,18 @@
 $( document ).ready(function() {
   $(function(){
-    $('#submitButton').submit(function(e){
+    $('#submitButton').click(function(e){
+      if($('#password1').val() !== $('#password2').val()){
       e.preventDefault();
+        $("#status").text("Password confirmation doesn't match Password");
+        return;
+      }
       $(this).attr('disable','disable');
       $(this).html("Submitting");
-      console.log($('#password1').vaule())
       $.ajax({
         async: true,
         type: 'POST',
-        url: 'http://putsreq.com/tkGQDRxoKydGfEKQVuUf',
-        data: $('#firstName').serialize(),
+        url: 'http://putsreq.com/ma0BuPW6a9wY2RLA7iIy',
+        data: $('#register-form').serialize(),
         dataType: 'text',
         crossDomain: true,
         complete: function(){
@@ -21,6 +24,7 @@ $( document ).ready(function() {
         success: function(response){
           $("#status").text("Successed");
           $('#submitButton').html("Submit")
+          return;
         }
       })
     })
